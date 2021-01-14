@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor SVG</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <div id="titleDiv">
+        <label id="titleLabel">TITLE: </label>
+        <input id="title" value="Untitled"></input>
+    </div>
+
+    <div id="toolBar" class="btn-group-vertical" role="group">
+
+        <button id="createLine" type="button" class="btn btn-secondary">Line
+
+
+        </button>
+        <button id="createCircle" type="button" class="btn btn-secondary">
+
+            Circle
+        </button>
+        <button id="createRectangle" type="button" class="btn btn-secondary">Rectangle</button>
+        <button id="save" type="button" class="btn btn-secondary">Save (.svg)</button>
+        <button id="export" type="button" class="btn btn-secondary">Export (.png)</button>
+
+
+        <label class="toolBarLabels">Elem width/radius:</label>
+        <input id="elem-width" class="inputsVals" value="100"></input>
+        <label class="toolBarLabels">Elem height:</label>
+        <input id="elem-height" class="inputsVals" value="50"></input>
+        <label class="toolBarLabels">Stroke width:</label>
+        <input id="stroke-width" class="inputsVals" value="2"></input>
+        <label class="toolBarLabels">Color code:</label>
+
+        <input type="color" value="#ff0000" id="inputColor">
+
+        <input type="text" class="inputsVals" spellcheck="false" placeholder="Color" id="inputText" value="#ff0000">
+
+
+        <div class="btn1" class="btn-group-vertical" role="group"></div>>
+        <button class="btn btn-primary" id="btn1" id="setColor">Set color </button>
+
+
+        <br>
+        <label class="toolBarLabels">Stroke - Color code:</label>
+
+        <input type="color" value="#000000" id="inputColor2">
+
+        <input type="text" class="inputsVals" spellcheck="false" placeholder="Color" id="inputText2" value="#000000">
+
+
+        <div class="btn1" class="btn-group-vertical" role="group"></div>>
+        <button class="btn btn-primary" id="btn2" id="setStrokeColor">Set stroke color </button>
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+    <div id="content">
+        <svg id="canvasSVG1"></svg>
+    </div>
+
+    <canvas id="canvas">
+    </canvas>
+
+    <script src="editor-svg.js"></script>
+
+
+
+</body>
+
+</html>
