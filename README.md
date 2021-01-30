@@ -9,4 +9,4 @@ Functionalities:
 - Dubble click to remove a shape
 - Save to .svg format or Export to .png
 
-Enhoy :)
+Enjoy :)
